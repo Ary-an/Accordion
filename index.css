@@ -1,0 +1,89 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.technocrazed.com/wp-content/uploads/2015/12/Transformer-Wallpaper-1.jpg');
+    /* background: linear-gradient(to right, rgb(0, 198, 255), rgb(0, 114, 255)); */
+    background-size: cover;
+}
+
+#container{
+    width:300px;;
+    height: auto;
+    margin: 100px 0;
+
+    
+}
+
+
+.accordion{
+    width: 100%;    
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 114, 255));
+    
+    margin: 0 0 20px 20px;
+    padding: 8px;
+
+    border: none;
+    border-radius: 16px;
+    
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.4s;
+
+    font-family: 'Fira Code', monospace;
+    
+    transition: all ease 0.5s;
+}
+
+.accordion:last-of-type{
+    margin-bottom: 0;
+}
+
+.accordion:hover{
+    color: white;
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(0, 114, 255));
+}
+
+.accordion i{
+    float: right;
+    color: white;
+
+}
+.card{
+    display: none;
+
+    max-width: 100%;
+    height: auto;
+
+    margin: 0 0 20px 40px;
+
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(0, 114, 255));
+    color: white;
+
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+
+    animation:animateZoom 0.6s;    
+}
+
+.card-list{
+    list-style-type:none;
+    padding: 16px;
+    overflow: hidden;
+
+}
+.card-list li{
+    margin-top: 8px;
+    border-bottom: 1px solid dodgerblue;
+}
+
+
+@keyframes animateZoom{
+    from{
+        transform:scale(0)
+    } 
+    to{
+        transform:scale(1)
+    }
+}
